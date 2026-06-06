@@ -490,6 +490,94 @@ h3 {
   text-transform: uppercase;
 }
 
+.legal-hero {
+  padding-bottom: clamp(52px, 7vw, 86px);
+}
+
+.legal-hero h1 {
+  max-width: 820px;
+}
+
+.legal-intro {
+  max-width: 820px;
+  margin: 24px 0 0;
+  color: rgba(246, 242, 234, 0.86);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.22rem, 2vw, 1.72rem);
+  line-height: 1.38;
+}
+
+.legal-updated {
+  margin: 24px 0 0;
+  color: var(--champagne-gold);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.legal-section {
+  padding-top: clamp(56px, 8vw, 92px);
+}
+
+.legal-layout {
+  display: grid;
+  grid-template-columns: minmax(220px, 0.36fr) minmax(0, 0.64fr);
+  gap: clamp(32px, 5vw, 76px);
+  align-items: start;
+}
+
+.legal-summary {
+  position: sticky;
+  top: 110px;
+  padding: 24px;
+  background: rgba(22, 22, 20, 0.74);
+  border: 1px solid rgba(216, 201, 163, 0.14);
+  border-radius: var(--radius);
+}
+
+.legal-summary p:last-child {
+  margin: 0;
+  color: var(--muted-text);
+}
+
+.legal-content {
+  display: grid;
+  gap: 34px;
+}
+
+.legal-content article {
+  padding-bottom: 34px;
+  border-bottom: 1px solid rgba(216, 201, 163, 0.14);
+}
+
+.legal-content article:last-child {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+.legal-content h2 {
+  font-size: clamp(1.55rem, 2.5vw, 2.45rem);
+}
+
+.legal-content p,
+.legal-content address {
+  margin: 16px 0 0;
+  color: var(--muted-text);
+  font-style: normal;
+}
+
+.legal-content a {
+  color: var(--champagne-gold);
+  border-bottom: 1px solid rgba(216, 201, 163, 0.32);
+}
+
+.legal-content a:hover,
+.legal-content a:focus-visible {
+  color: var(--bone-white);
+  border-bottom-color: var(--bone-white);
+}
+
 .site-footer {
   padding: 30px 0 34px;
   border-top: 1px solid rgba(216, 201, 163, 0.14);
@@ -559,6 +647,14 @@ h3 {
 
   .social-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .legal-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .legal-summary {
+    position: static;
   }
 }
 
