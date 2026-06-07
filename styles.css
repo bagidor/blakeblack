@@ -417,9 +417,12 @@ h3 {
 }
 
 .availability-logo-link {
-  width: min(100%, 340px);
+  width: min(100%, 250px);
   display: inline-block;
+  padding: 10px;
+  background: var(--bone-white);
   border-bottom: 0;
+  border-radius: var(--radius);
 }
 
 .availability-logo-link img {
@@ -640,14 +643,19 @@ h3 {
 }
 
 .footer-brand {
-  display: grid;
-  place-items: center;
-  padding: clamp(36px, 7vw, 76px) 0;
+  width: min(100% - 32px, var(--container));
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding: clamp(28px, 5vw, 48px) 0;
+  text-align: center;
 }
 
 .footer-brand img {
-  width: clamp(96px, 16vw, 170px);
+  width: clamp(72px, 9vw, 104px);
   height: auto;
+  display: block;
+  margin: 0 auto;
 }
 
 .site-footer {
