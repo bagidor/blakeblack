@@ -96,12 +96,14 @@ input {
 }
 
 .brand-mark {
-  color: var(--bone-white);
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 1.05rem;
-  font-weight: 700;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+  flex: 0 0 auto;
+}
+
+.brand-mark img {
+  width: auto;
+  height: 56px;
 }
 
 .primary-nav {
