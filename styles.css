@@ -391,6 +391,53 @@ h3 {
   border: 0;
 }
 
+.availability-layout {
+  display: grid;
+  grid-template-columns: minmax(260px, 0.8fr) minmax(320px, 1.2fr);
+  align-items: start;
+  gap: clamp(28px, 6vw, 76px);
+}
+
+.availability-copy {
+  display: grid;
+  gap: 18px;
+}
+
+.availability-copy p {
+  margin: 0;
+  color: rgba(246, 242, 234, 0.86);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.2rem, 2vw, 1.7rem);
+  line-height: 1.38;
+}
+
+.availability-copy a {
+  color: var(--champagne-gold);
+  border-bottom: 1px solid rgba(216, 201, 163, 0.36);
+}
+
+.availability-logo-link {
+  width: min(100%, 340px);
+  display: inline-block;
+  border-bottom: 0;
+}
+
+.availability-logo-link img {
+  width: 100%;
+  height: auto;
+}
+
+.availability-copy .availability-logo-link:hover,
+.availability-copy .availability-logo-link:focus-visible {
+  border-bottom: 0;
+}
+
+.availability-copy a:hover,
+.availability-copy a:focus-visible {
+  color: var(--burnished-copper);
+  border-bottom-color: var(--burnished-copper);
+}
+
 .faq-list {
   display: grid;
   gap: 12px;
@@ -592,6 +639,17 @@ h3 {
   border-bottom-color: var(--bone-white);
 }
 
+.footer-brand {
+  display: grid;
+  place-items: center;
+  padding: clamp(36px, 7vw, 76px) 0;
+}
+
+.footer-brand img {
+  width: clamp(96px, 16vw, 170px);
+  height: auto;
+}
+
 .site-footer {
   padding: 30px 0 34px;
   border-top: 1px solid rgba(216, 201, 163, 0.14);
@@ -648,6 +706,10 @@ h3 {
   }
 
   .split-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .availability-layout {
     grid-template-columns: 1fr;
   }
 
