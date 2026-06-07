@@ -416,6 +416,23 @@ h3 {
   border-bottom: 1px solid rgba(216, 201, 163, 0.36);
 }
 
+.availability-image-link {
+  width: min(100%, 220px);
+  display: inline-block;
+  border-bottom: 0;
+}
+
+.availability-image-link img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius);
+}
+
+.availability-copy .availability-image-link:hover,
+.availability-copy .availability-image-link:focus-visible {
+  border-bottom: 0;
+}
+
 .availability-copy a:hover,
 .availability-copy a:focus-visible {
   color: var(--burnished-copper);
