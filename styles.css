@@ -10,6 +10,8 @@
   --shadow: 0 24px 70px rgba(0, 0, 0, 0.34);
   --container: 1180px;
   --radius: 8px;
+  --font-proxima: "Proxima Nova", "proxima-nova", "Avenir Next", "Helvetica Neue", Arial, sans-serif;
+  --matte-texture: url("images/testbackground.png");
 }
 
 * {
@@ -24,13 +26,21 @@ body {
   margin: 0;
   background: var(--warm-black);
   color: var(--bone-white);
-  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family: var(--font-proxima);
   line-height: 1.6;
   text-rendering: optimizeLegibility;
 }
 
 body.nav-open {
   overflow: hidden;
+}
+
+main,
+.site-footer {
+  background:
+    linear-gradient(rgba(22, 22, 20, 0.86), rgba(22, 22, 20, 0.86)),
+    var(--matte-texture) center / 620px repeat,
+    var(--warm-black);
 }
 
 img {
@@ -96,12 +106,17 @@ input {
 }
 
 .brand-mark {
-  color: var(--bone-white);
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 1.05rem;
-  font-weight: 700;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
+  width: clamp(118px, 13vw, 168px);
+  flex: 0 0 auto;
+  display: block;
+}
+
+.brand-mark img {
+  width: 100%;
+  height: auto;
+  max-height: 40px;
+  object-fit: contain;
+  object-position: left center;
 }
 
 .primary-nav {
@@ -116,6 +131,7 @@ input {
 .primary-nav a {
   color: rgba(246, 242, 234, 0.78);
   font-size: 0.76rem;
+  font-weight: 800;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   transition: color 180ms ease;
@@ -162,6 +178,8 @@ input {
 .muted-section {
   background:
     linear-gradient(180deg, rgba(45, 41, 37, 0.66), rgba(45, 41, 37, 0.28)),
+    linear-gradient(rgba(22, 22, 20, 0.68), rgba(22, 22, 20, 0.68)),
+    var(--matte-texture) center / 620px repeat,
     var(--warm-black);
   border-top: 1px solid rgba(216, 201, 163, 0.08);
   border-bottom: 1px solid rgba(216, 201, 163, 0.08);
@@ -182,13 +200,16 @@ input {
 }
 
 .hero-intro {
+  width: 100%;
+  container-type: inline-size;
   display: grid;
   justify-items: center;
   text-align: center;
 }
 
 .hero-title {
-  font-size: clamp(3.1rem, 8vw, 7.2rem);
+  font-size: clamp(1.35rem, 7cqw, 5.3rem);
+  white-space: nowrap;
 }
 
 .hero-kicker {
@@ -205,7 +226,7 @@ input {
   max-width: 860px;
   margin: 0;
   color: rgba(246, 242, 234, 0.86);
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--font-proxima);
   font-size: clamp(1.35rem, 2.5vw, 2.1rem);
   line-height: 1.32;
 }
@@ -245,7 +266,7 @@ h3 {
 
 h1,
 h2 {
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--font-proxima);
   font-size: clamp(2.2rem, 5vw, 4.9rem);
   font-weight: 500;
 }
@@ -258,6 +279,7 @@ h3 {
 .section-heading {
   max-width: 760px;
   margin-bottom: clamp(32px, 5vw, 56px);
+  container-type: inline-size;
 }
 
 .section-heading.narrow {
@@ -268,6 +290,11 @@ h3 {
   margin-right: auto;
   margin-left: auto;
   text-align: center;
+}
+
+.matched-section-heading {
+  font-size: clamp(2.2rem, 5vw, 4.9rem);
+  white-space: nowrap;
 }
 
 .section-copy {
@@ -336,6 +363,90 @@ h3 {
   border-radius: calc(var(--radius) - 2px);
 }
 
+.reviews-section {
+  padding-top: clamp(54px, 8vw, 104px);
+}
+
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  align-items: start;
+}
+
+.review-card {
+  min-width: 0;
+  display: grid;
+  overflow: hidden;
+  background: rgba(22, 22, 20, 0.74);
+  border: 1px solid rgba(216, 201, 163, 0.14);
+  border-radius: var(--radius);
+  transition: border-color 180ms ease, transform 180ms ease;
+}
+
+.review-card:hover,
+.review-card:focus-visible {
+  border-color: rgba(216, 201, 163, 0.56);
+  transform: translateY(-2px);
+}
+
+.review-quote {
+  min-height: 112px;
+  display: block;
+  padding: 20px 20px 18px;
+  color: var(--bone-white);
+  font-family: var(--font-proxima);
+  font-size: clamp(1.22rem, 1.7vw, 1.55rem);
+  line-height: 1.16;
+  text-align: center;
+  background: rgba(22, 22, 20, 0.92);
+  border-bottom: 1px solid rgba(216, 201, 163, 0.14);
+}
+
+.review-image {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  background: var(--smoky-taupe);
+}
+
+.review-image-1 {
+  object-position: 42% 45%;
+}
+
+.review-image-2 {
+  object-position: 50% 44%;
+}
+
+.review-image-3 {
+  object-position: 50% 16%;
+}
+
+.review-card-body {
+  display: grid;
+  gap: 8px;
+  padding: 18px 20px 20px;
+}
+
+.review-card-kicker {
+  color: var(--champagne-gold);
+  font-size: 0.74rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.review-card-link {
+  width: fit-content;
+  color: rgba(246, 242, 234, 0.78);
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  border-bottom: 1px solid rgba(216, 201, 163, 0.28);
+}
+
 .uses-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -373,6 +484,13 @@ h3 {
   gap: clamp(34px, 6vw, 82px);
 }
 
+.getting-started-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.08fr) minmax(420px, 0.92fr);
+  align-items: start;
+  gap: clamp(34px, 6vw, 82px);
+}
+
 .video-frame {
   position: relative;
   aspect-ratio: 16 / 9;
@@ -393,9 +511,13 @@ h3 {
 
 .availability-layout {
   display: grid;
-  grid-template-columns: minmax(260px, 0.8fr) minmax(320px, 1.2fr);
+  grid-template-columns: minmax(0, 1.35fr) minmax(320px, 0.65fr);
   align-items: start;
   gap: clamp(28px, 6vw, 76px);
+}
+
+.availability-layout .section-heading {
+  max-width: none;
 }
 
 .availability-copy {
@@ -406,7 +528,7 @@ h3 {
 .availability-copy p {
   margin: 0;
   color: rgba(246, 242, 234, 0.86);
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--font-proxima);
   font-size: clamp(1.2rem, 2vw, 1.7rem);
   line-height: 1.38;
 }
@@ -486,16 +608,13 @@ h3 {
 }
 
 .contact-grid {
-  display: grid;
-  grid-template-columns: minmax(260px, 1fr) auto;
-  align-items: end;
-  gap: 32px;
+  display: block;
 }
 
 .contact-links {
   display: grid;
   gap: 12px;
-  min-width: min(100%, 320px);
+  max-width: min(100%, 320px);
 }
 
 .contact-links a,
@@ -564,7 +683,7 @@ h3 {
   max-width: 820px;
   margin: 24px 0 0;
   color: rgba(246, 242, 234, 0.86);
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--font-proxima);
   font-size: clamp(1.22rem, 2vw, 1.72rem);
   line-height: 1.38;
 }
@@ -699,6 +818,14 @@ h3 {
     grid-template-columns: 1fr;
   }
 
+  .getting-started-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .reviews-grid {
+    grid-template-columns: 1fr;
+  }
+
   .availability-layout {
     grid-template-columns: 1fr;
   }
@@ -753,6 +880,10 @@ h3 {
   .use-card {
     min-height: 0;
     padding: 22px;
+  }
+
+  .review-card-body {
+    padding: 18px;
   }
 
   .faq-item summary {

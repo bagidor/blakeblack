@@ -23,7 +23,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <link rel="preload" href="images/bar.jpeg" as="image">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css?v=20260722-texture-preview">
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-RLLL920ESY"></script>
     <script>
@@ -96,7 +96,9 @@
 
     <header class="site-header" data-header>
       <nav class="nav-shell" aria-label="Primary navigation">
-        <a class="brand-mark" href="#meet" aria-label="BAGIDOR home">BAGIDOR</a>
+        <a class="brand-mark" href="#meet" aria-label="BAGIDOR home">
+          <img src="images/bagidor-header-logo.png" alt="BAGIDOR" width="2640" height="628">
+        </a>
         <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" data-nav-toggle>
           <span class="nav-toggle-line"></span>
           <span class="nav-toggle-line"></span>
@@ -105,9 +107,10 @@
         </button>
         <ul class="primary-nav" id="primary-nav" data-primary-nav>
           <li><a href="#meet">Meet</a></li>
+          <li><a href="#getting-started">Getting Started</a></li>
+          <li><a href="#reviews">Reviews</a></li>
           <li><a href="#why">Benefits</a></li>
           <li><a href="#uses">Uses</a></li>
-          <li><a href="#getting-started">Setup</a></li>
           <li><a href="#get-your-bagidor">Get Yours</a></li>
           <li><a href="#faqs">Questions</a></li>
           <li><a href="#contact">Email</a></li>
@@ -120,7 +123,7 @@
       <section class="hero section" id="meet" aria-labelledby="hero-title">
         <div class="container hero-shell">
           <div class="hero-intro">
-            <h1 class="hero-title" id="hero-title">MEET BAGIDOR</h1>
+            <h1 class="hero-title" id="hero-title">MEET THE BAGIDOR HUMIDOR</h1>
             <p class="hero-copy">
               A modern, portable cigar storage system designed to help keep cigars properly stored at home, at the lounge, or on the go. Durable, dependable, and ready when you are.
             </p>
@@ -131,10 +134,64 @@
         </div>
       </section>
 
+      <section class="section" id="getting-started" aria-labelledby="getting-started-heading">
+        <div class="container getting-started-layout">
+          <div class="section-heading">
+            <h2 class="matched-section-heading" id="getting-started-heading">Getting Started</h2>
+            <p class="section-copy">Read the BAGIDOR user guide before using.</p>
+            <a class="button button-primary" href="images/bagidor-quick-start-guide.pdf" target="_blank" rel="noopener">Download User Guide</a>
+          </div>
+          <div class="video-frame" aria-label="BAGIDOR setup video">
+            <iframe
+              src="https://www.youtube.com/embed/BsYoQHV2OQ8"
+              title="BAGIDOR setup video"
+              loading="lazy"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+      </section>
+
+      <section class="section muted-section reviews-section" id="reviews" aria-labelledby="reviews-heading">
+        <div class="container">
+          <div class="section-heading narrow">
+            <h1 class="matched-section-heading" id="reviews-heading">Reviews</h1>
+          </div>
+
+          <div class="reviews-grid">
+            <a class="review-card" href="https://www.instagram.com/reels/Da7-MmTubGi/" target="_blank" rel="noopener" aria-label="Watch BAGIDOR review reel on Instagram">
+              <span class="review-quote">"THIS THING IS SICK! MAN, I LOVE IT!"</span>
+              <img class="review-image review-image-1" src="images/review-1.png" alt="BAGIDOR review thumbnail with the text Check Out the Bagidor with me" width="1469" height="849" loading="lazy">
+              <span class="review-card-body">
+                <span class="review-card-kicker">Instagram Reel</span>
+                <span class="review-card-link">Watch Review</span>
+              </span>
+            </a>
+            <a class="review-card" href="https://www.instagram.com/reels/DaQW_KUueM3/" target="_blank" rel="noopener" aria-label="Watch BAGIDOR review reel on Instagram">
+              <span class="review-quote">"THIS IS PRETTY COOL!"</span>
+              <img class="review-image review-image-2" src="images/review-2.png" alt="BAGIDOR portable humidor bag review thumbnail" width="856" height="485" loading="lazy">
+              <span class="review-card-body">
+                <span class="review-card-kicker">Instagram Reel</span>
+                <span class="review-card-link">Watch Review</span>
+              </span>
+            </a>
+            <a class="review-card" href="https://www.instagram.com/p/DaA79lVtZkl/" target="_blank" rel="noopener" aria-label="Open BAGIDOR review post on Instagram">
+              <span class="review-quote">"CHECK IT OUT! VERY COOL!"</span>
+              <img class="review-image review-image-3" src="images/review-3.png" alt="BAGIDOR review thumbnail with the text New Portable Humidor" width="827" height="1202" loading="lazy">
+              <span class="review-card-body">
+                <span class="review-card-kicker">Instagram Reel</span>
+                <span class="review-card-link">Watch Review</span>
+              </span>
+            </a>
+          </div>
+        </div>
+      </section>
+
       <section class="section compact-section" id="why" aria-labelledby="why-heading">
         <div class="container">
           <div class="section-heading">
-            <h2 id="why-heading">Premium storage without the upkeep.</h2>
+            <h2 class="matched-section-heading" id="why-heading">Hassle-Free Cigar Storage</h2>
             <p class="section-copy">Premium cigar storage without the maintenance of a traditional humidor.</p>
           </div>
           <figure class="benefits-frame">
@@ -146,29 +203,29 @@
       <section class="section muted-section" id="uses" aria-labelledby="uses-heading">
         <div class="container">
           <div class="section-heading narrow">
-            <h2 id="uses-heading">Built for daily storage, overflow, aging, and travel.</h2>
+            <h2 class="matched-section-heading" id="uses-heading">One BAGIDOR. Many Uses.</h2>
           </div>
 
           <div class="uses-grid">
             <article class="use-card">
               <h3>Easy Start to Cigar Storage</h3>
-              <p>This option provides a simple, inexpensive, and zero-maintenance entry point for first-time smokers looking for a dependable alternative to traditional humidors.</p>
+              <p>BAGIDOR provides a simple, inexpensive, and zero-maintenance entry point for first-time smokers looking for a dependable alternative to traditional humidors.</p>
             </article>
             <article class="use-card">
               <h3>Ensure Pure Storage</h3>
-              <p>It features food-grade, odor-free cigar storage with a hygienic interior designed to preserve natural cigar aromas without any plastic off-gassing.</p>
+              <p>Food-grade, odor-free cigar storage with a hygienic interior designed to preserve natural cigar aromas without any plastic off-gassing.</p>
             </article>
             <article class="use-card">
               <h3>Expand Existing Capacity</h3>
-              <p>This solution offers an immediate, small-footprint way to handle overflow and scale a growing collection when primary humidors are completely full.</p>
+              <p>Handle overflow and scale a growing collection when primary humidors are completely full.</p>
             </article>
             <article class="use-card">
               <h3>Separation &amp; Isolation</h3>
-              <p>It allows smokers to quarantine, rest, or segregate specific cigars, such as flavored, aged, or high-aroma varieties, to prevent flavor contamination.</p>
+              <p>Quarantine, rest, or segregate specific cigars, such as flavored, aged, or high-aroma varieties, to prevent flavor contamination.</p>
             </article>
             <article class="use-card">
               <h3>Long-Term Storage &amp; Aging</h3>
-              <p>This setup provides a reliable, set-it-and-forget-it sealed environment with 2-way humidity control for aging boxes or storing cigars for months or years.</p>
+              <p>Reliable, set-it-and-forget-it sealed environment with 2-way humidity control for aging boxes or storing cigars for months or years.</p>
             </article>
             <article class="use-card">
               <h3>Travel / Grab-and-Go</h3>
@@ -194,28 +251,10 @@
         </div>
       </section>
 
-      <section class="section" id="getting-started" aria-labelledby="getting-started-heading">
-        <div class="container split-layout">
-          <div class="section-heading">
-            <h2 id="getting-started-heading">New to BAGIDOR? Watch this quick video first.</h2>
-            <p class="section-copy">A brief setup walkthrough helps ensure your cigars are stored correctly from the first use.</p>
-          </div>
-          <div class="video-frame" aria-label="BAGIDOR setup video">
-            <iframe
-              src="https://www.youtube.com/embed/BsYoQHV2OQ8"
-              title="BAGIDOR setup video"
-              loading="lazy"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen>
-            </iframe>
-          </div>
-        </div>
-      </section>
-
       <section class="section muted-section" id="get-your-bagidor" aria-labelledby="get-your-bagidor-heading">
         <div class="container availability-layout">
           <div class="section-heading">
-            <h2 id="get-your-bagidor-heading">Get Your BAGIDOR</h2>
+            <h2 class="matched-section-heading" id="get-your-bagidor-heading">Get Your BAGIDOR</h2>
           </div>
           <div class="availability-copy">
             <p>Pick it up today:</p>
@@ -231,7 +270,7 @@
       <section class="section muted-section" id="faqs" aria-labelledby="faqs-heading">
         <div class="container">
           <div class="section-heading narrow">
-            <h2 id="faqs-heading">Everything you need to know before storing your cigars.</h2>
+            <h2 class="matched-section-heading" id="faqs-heading">Cigar Storage FAQs</h2>
           </div>
 
           <div class="faq-list">
@@ -282,11 +321,11 @@
       <section class="section contact-section" id="contact" aria-labelledby="contact-heading">
         <div class="container contact-grid">
           <div class="section-heading">
-            <h2 id="contact-heading">Get in Touch</h2>
-            <p class="section-copy">Have a question, need product support, or interested in wholesale opportunities? We&rsquo;re here to help. Reach out to the Bagidor team below.</p>
-          </div>
-          <div class="contact-links">
-            <a href="mailto:hello@blake.black">hello@blake.black</a>
+            <h2 class="matched-section-heading" id="contact-heading">Get in Touch</h2>
+            <p class="section-copy">Reach out to the BAGIDOR team here:</p>
+            <div class="contact-links">
+              <a href="mailto:hello@blake.black">hello@blake.black</a>
+            </div>
           </div>
         </div>
       </section>
@@ -294,7 +333,7 @@
       <section class="section muted-section social-section" id="join-us" aria-labelledby="join-us-heading">
         <div class="container">
           <div class="section-heading narrow centered">
-            <h2 id="join-us-heading">Connect with Bagidor.</h2>
+            <h2 class="matched-section-heading" id="join-us-heading">Connect with BAGIDOR</h2>
           </div>
           <div class="social-grid" aria-label="BAGIDOR social links">
             <a href="https://www.instagram.com/bagidoroffical/" target="_blank" rel="noopener">
