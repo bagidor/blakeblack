@@ -97,12 +97,17 @@ input {
 }
 
 .brand-mark {
-  color: var(--bone-white);
-  font-family: var(--font-proxima);
-  font-size: 1.05rem;
-  font-weight: 700;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
+  width: clamp(118px, 13vw, 168px);
+  flex: 0 0 auto;
+  display: block;
+}
+
+.brand-mark img {
+  width: 100%;
+  height: auto;
+  max-height: 40px;
+  object-fit: contain;
+  object-position: left center;
 }
 
 .primary-nav {
@@ -117,6 +122,7 @@ input {
 .primary-nav a {
   color: rgba(246, 242, 234, 0.78);
   font-size: 0.76rem;
+  font-weight: 800;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   transition: color 180ms ease;
