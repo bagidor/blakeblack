@@ -494,9 +494,13 @@ h3 {
 
 .availability-layout {
   display: grid;
-  grid-template-columns: minmax(260px, 0.8fr) minmax(320px, 1.2fr);
+  grid-template-columns: minmax(0, 1.35fr) minmax(320px, 0.65fr);
   align-items: start;
   gap: clamp(28px, 6vw, 76px);
+}
+
+.availability-layout .section-heading {
+  max-width: none;
 }
 
 .availability-copy {
