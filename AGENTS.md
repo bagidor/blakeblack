@@ -155,12 +155,10 @@ CTA:
 
 Use the following URLs unless updated by the owner:
 
-- Instagram: `https://www.instagram.com/bagidoroffical/`
-- TikTok: `https://www.tiktok.com/@bagidoroffical`
+- Instagram: `https://www.instagram.com/bagidorhumidor`
+- TikTok: `https://www.tiktok.com/@bagidorhumidor`
 - Facebook: `https://www.facebook.com/profile.php?id=61590431908635`
-- YouTube: `https://www.youtube.com/@bagidoroffical`
-
-Note: The provided social URLs use `bagidoroffical` without the second "i" in "official." Verify handles before launch if the owner has not confirmed them.
+- YouTube: `https://www.youtube.com/@bagidorhumidor`
 
 ## Footer
 
