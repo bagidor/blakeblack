@@ -275,7 +275,7 @@ h3 {
 }
 
 .single-line-heading {
-  font-size: clamp(1.25rem, 6.4cqw, 4.9rem);
+  font-size: clamp(1.55rem, min(5vw, 10cqw), 4.9rem);
   white-space: nowrap;
 }
 
