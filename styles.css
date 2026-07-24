@@ -237,6 +237,43 @@ input {
   object-fit: cover;
 }
 
+.meet-benefits-grid {
+  width: min(100%, 1040px);
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.meet-benefit-card {
+  min-width: 0;
+  padding: clamp(22px, 2.5vw, 30px);
+  background: rgba(22, 22, 20, 0.78);
+  border: 1px solid rgba(216, 201, 163, 0.16);
+  border-radius: var(--radius);
+}
+
+.meet-benefit-card::before {
+  content: "";
+  width: 42px;
+  height: 2px;
+  display: block;
+  margin-bottom: 18px;
+  background: var(--burnished-copper);
+}
+
+.meet-benefit-card h2 {
+  color: var(--bone-white);
+  font-size: clamp(1.08rem, 1.5vw, 1.34rem);
+  line-height: 1.2;
+}
+
+.meet-benefit-card p {
+  margin: 14px 0 0;
+  color: var(--muted-text);
+  font-size: 0.96rem;
+  line-height: 1.6;
+}
+
 .eyebrow {
   margin: 0 0 12px;
   color: var(--champagne-gold);
@@ -889,6 +926,10 @@ h3 {
     grid-template-columns: 1fr;
   }
 
+  .meet-benefits-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .availability-layout {
     grid-template-columns: 1fr;
   }
@@ -936,7 +977,8 @@ h3 {
   }
 
   .uses-grid,
-  .social-grid {
+  .social-grid,
+  .meet-benefits-grid {
     grid-template-columns: 1fr;
   }
 
