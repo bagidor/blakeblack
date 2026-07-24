@@ -453,11 +453,6 @@ h3 {
 
 .boost-showcase {
   overflow: hidden;
-  padding: clamp(18px, 3vw, 38px);
-  background: #fff;
-  border: 1px solid rgba(216, 201, 163, 0.2);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
 }
 
 .boost-product-row {
@@ -475,6 +470,10 @@ h3 {
 .boost-features {
   display: block;
   width: 100%;
+  background: #fff;
+  border: 2px solid rgba(255, 255, 255, 0.9);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
 }
 
 .boost-logo {
@@ -929,10 +928,6 @@ h3 {
 
   .review-card-body {
     padding: 18px;
-  }
-
-  .boost-showcase {
-    padding: 12px;
   }
 
   .boost-product-row {
