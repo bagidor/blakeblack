@@ -461,11 +461,13 @@ h3 {
 }
 
 .boost-product-row {
+  width: 90%;
+  margin: 0 auto;
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1.12fr);
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
   align-items: center;
   gap: clamp(18px, 4vw, 54px);
-  padding: 0 clamp(6px, 3vw, 34px) clamp(18px, 3vw, 34px);
+  padding: 0 0 clamp(18px, 3vw, 34px);
 }
 
 .boost-logo,
@@ -869,15 +871,6 @@ h3 {
     grid-template-columns: 1fr;
   }
 
-  .boost-product-row {
-    grid-template-columns: 1fr;
-  }
-
-  .boost-logo {
-    width: min(100%, 560px);
-    margin: 0 auto;
-  }
-
   .availability-layout {
     grid-template-columns: 1fr;
   }
@@ -943,8 +936,9 @@ h3 {
   }
 
   .boost-product-row {
+    width: 94%;
     gap: 8px;
-    padding: 4px 4px 14px;
+    padding: 4px 0 14px;
   }
 
   .faq-item summary {
