@@ -476,28 +476,42 @@ h3 {
   padding: 0 0 clamp(18px, 3vw, 34px);
 }
 
-.boost-logo,
-.boost-pack,
+.boost-image-frame,
 .boost-features {
-  display: block;
   width: 100%;
+  overflow: hidden;
   background: #fff;
   border: 2px solid rgba(255, 255, 255, 0.9);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
 }
 
-.boost-logo {
+.boost-logo-frame {
   aspect-ratio: 3777 / 2027;
-  object-fit: contain;
+}
+
+.boost-logo {
+  display: block;
+  width: 100%;
+}
+
+.boost-pack-frame {
+  position: relative;
+  aspect-ratio: 13 / 9;
 }
 
 .boost-pack {
-  aspect-ratio: 3 / 2;
-  object-fit: contain;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  width: 138.5%;
+  max-width: none;
+  transform: translate(-50%, -50%);
 }
 
 .boost-features {
+  display: block;
   aspect-ratio: 2632 / 1112;
   object-fit: cover;
 }
