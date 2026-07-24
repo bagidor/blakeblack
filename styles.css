@@ -11,6 +11,7 @@
   --container: 1180px;
   --radius: 8px;
   --font-proxima: "Proxima Nova", "proxima-nova", "Avenir Next", "Helvetica Neue", Arial, sans-serif;
+  --matte-texture: url("images/testbackground.png");
 }
 
 * {
@@ -434,6 +435,79 @@ h3 {
   letter-spacing: 0.12em;
   text-transform: uppercase;
   border-bottom: 1px solid rgba(216, 201, 163, 0.28);
+}
+
+.boost-section {
+  background:
+    linear-gradient(rgba(22, 22, 20, 0.82), rgba(22, 22, 20, 0.82)),
+    var(--matte-texture) center / 620px repeat,
+    var(--warm-black);
+}
+
+.boost-section .section-heading {
+  max-width: 1040px;
+}
+
+.boost-section .matched-section-heading {
+  white-space: normal;
+}
+
+.boost-showcase {
+  overflow: hidden;
+}
+
+.boost-product-row {
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: center;
+  gap: clamp(18px, 4vw, 54px);
+  padding: 0 0 clamp(18px, 3vw, 34px);
+}
+
+.boost-image-frame,
+.boost-features {
+  width: 100%;
+  overflow: hidden;
+  background: #fff;
+  border: 2px solid rgba(255, 255, 255, 0.9);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.boost-logo-frame {
+  display: grid;
+  place-items: center;
+  aspect-ratio: 13 / 9;
+}
+
+.boost-logo {
+  display: block;
+  width: 92%;
+}
+
+.boost-pack-frame {
+  position: relative;
+  aspect-ratio: 13 / 9;
+}
+
+.boost-pack {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  width: 138.5%;
+  max-width: none;
+  transform: translate(-50%, -50%);
+}
+
+.boost-features {
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+  aspect-ratio: 2632 / 1112;
+  object-fit: cover;
 }
 
 .uses-grid {
@@ -873,6 +947,16 @@ h3 {
 
   .review-card-body {
     padding: 18px;
+  }
+
+  .boost-product-row {
+    width: 94%;
+    gap: 8px;
+    padding: 4px 0 14px;
+  }
+
+  .boost-features {
+    width: 94%;
   }
 
   .faq-item summary {
