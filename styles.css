@@ -470,7 +470,7 @@ h3 {
   width: 90%;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   align-items: center;
   gap: clamp(18px, 4vw, 54px);
   padding: 0 0 clamp(18px, 3vw, 34px);
@@ -487,12 +487,14 @@ h3 {
 }
 
 .boost-logo-frame {
-  aspect-ratio: 3777 / 2027;
+  display: grid;
+  place-items: center;
+  aspect-ratio: 13 / 9;
 }
 
 .boost-logo {
   display: block;
-  width: 100%;
+  width: 92%;
 }
 
 .boost-pack-frame {
