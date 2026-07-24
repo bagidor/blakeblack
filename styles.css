@@ -221,6 +221,19 @@ input {
   line-height: 1.32;
 }
 
+.hero-copy-highlight {
+  display: block;
+  margin-bottom: 14px;
+  color: var(--champagne-gold);
+  font-size: clamp(1.8rem, 4vw, 3.4rem);
+  font-weight: 700;
+  line-height: 1.08;
+}
+
+.hero-copy span {
+  display: block;
+}
+
 .hero-media {
   margin: 0;
   width: min(100%, 1040px);
