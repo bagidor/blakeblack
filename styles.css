@@ -214,7 +214,7 @@ input {
 
 .hero-copy {
   max-width: 860px;
-  margin: 0;
+  margin: 18px 0 0;
   color: rgba(246, 242, 234, 0.86);
   font-family: var(--font-proxima);
   font-size: clamp(1.35rem, 2.5vw, 2.1rem);
