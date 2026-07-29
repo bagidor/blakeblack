@@ -373,7 +373,7 @@ h3 {
 
 .amazon-title {
   max-width: 850px;
-  font-size: clamp(2.4rem, 6vw, 5.8rem);
+  font-size: clamp(2.4rem, 5vw, 4.9rem);
 }
 
 .section-copy {
