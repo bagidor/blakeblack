@@ -224,11 +224,20 @@ input {
 
 .hero-copy {
   max-width: 860px;
-  margin: 0;
+  margin: 18px 0 0;
   color: rgba(246, 242, 234, 0.86);
   font-family: var(--font-proxima);
   font-size: clamp(1.35rem, 2.5vw, 2.1rem);
   line-height: 1.32;
+}
+
+.hero-copy-highlight {
+  display: block;
+  margin-bottom: 14px;
+  color: var(--champagne-gold);
+  font-size: clamp(1.8rem, 4vw, 3.4rem);
+  font-weight: 700;
+  line-height: 1.08;
 }
 
 .hero-media {
@@ -245,6 +254,52 @@ input {
   width: 100%;
   aspect-ratio: 1536 / 904;
   object-fit: cover;
+}
+
+.hero-product-line {
+  width: min(100%, 1040px);
+  margin: 0 0 clamp(-32px, -2.5vw, -18px);
+  color: rgba(246, 242, 234, 0.9);
+  font-size: clamp(1.6rem, 3.1vw, 2.6rem);
+  line-height: 1.3;
+  text-align: center;
+}
+
+.meet-benefits-grid {
+  width: min(100%, 1040px);
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.meet-benefit-card {
+  min-width: 0;
+  padding: clamp(22px, 2.5vw, 30px);
+  background: rgba(22, 22, 20, 0.78);
+  border: 1px solid rgba(216, 201, 163, 0.16);
+  border-radius: var(--radius);
+}
+
+.meet-benefit-card::before {
+  content: "";
+  width: 42px;
+  height: 2px;
+  display: block;
+  margin-bottom: 18px;
+  background: var(--burnished-copper);
+}
+
+.meet-benefit-card h2 {
+  color: var(--bone-white);
+  font-size: clamp(1.08rem, 1.5vw, 1.34rem);
+  line-height: 1.2;
+}
+
+.meet-benefit-card p {
+  margin: 14px 0 0;
+  color: var(--muted-text);
+  font-size: 0.96rem;
+  line-height: 1.6;
 }
 
 .eyebrow {
@@ -295,6 +350,31 @@ h3 {
 .matched-section-heading {
   font-size: clamp(2.2rem, 5vw, 4.9rem);
   white-space: nowrap;
+}
+
+.amazon-section {
+  padding: clamp(54px, 7vw, 92px) 0 clamp(62px, 8vw, 108px);
+  border-bottom: 1px solid rgba(216, 201, 163, 0.1);
+}
+
+.amazon-shell {
+  max-width: 920px;
+  display: grid;
+  justify-items: center;
+  text-align: center;
+}
+
+.amazon-title {
+  max-width: 850px;
+  font-size: clamp(2.4rem, 6vw, 5.8rem);
+}
+
+.amazon-copy {
+  max-width: 620px;
+  margin: 22px 0 30px;
+  color: rgba(246, 242, 234, 0.84);
+  font-size: clamp(1.16rem, 2vw, 1.6rem);
+  line-height: 1.42;
 }
 
 .section-copy {
@@ -514,6 +594,8 @@ h3 {
 
 .boost-features {
   display: block;
+  width: 90%;
+  margin: 0 auto;
   aspect-ratio: 2632 / 1112;
   object-fit: cover;
 }
@@ -581,10 +663,7 @@ h3 {
 }
 
 .availability-layout {
-  display: grid;
-  grid-template-columns: minmax(0, 1.35fr) minmax(320px, 0.65fr);
-  align-items: start;
-  gap: clamp(28px, 6vw, 76px);
+  display: block;
 }
 
 .availability-layout .section-heading {
@@ -897,8 +976,8 @@ h3 {
     grid-template-columns: 1fr;
   }
 
-  .availability-layout {
-    grid-template-columns: 1fr;
+  .meet-benefits-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .uses-grid {
@@ -944,7 +1023,8 @@ h3 {
   }
 
   .uses-grid,
-  .social-grid {
+  .social-grid,
+  .meet-benefits-grid {
     grid-template-columns: 1fr;
   }
 
@@ -961,6 +1041,10 @@ h3 {
     width: 94%;
     gap: 8px;
     padding: 4px 0 14px;
+  }
+
+  .boost-features {
+    width: 94%;
   }
 
   .faq-item summary {

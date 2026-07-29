@@ -23,7 +23,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <link rel="preload" href="images/bar.jpeg" as="image">
-    <link rel="stylesheet" href="styles.css?v=20260722-texture-preview">
+    <link rel="stylesheet" href="styles.css?v=20260724-hero-spacing-preview">
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-RLLL920ESY"></script>
     <script>
@@ -106,9 +106,11 @@
           <span class="sr-only">Toggle navigation</span>
         </button>
         <ul class="primary-nav" id="primary-nav" data-primary-nav>
+          <li><a href="#amazon">Amazon</a></li>
           <li><a href="#meet">Meet</a></li>
-          <li><a href="#getting-started">Getting Started</a></li>
+          <li><a href="#boost">BOOST</a></li>
           <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#getting-started">Getting Started</a></li>
           <li><a href="#why">Benefits</a></li>
           <li><a href="#uses">Uses</a></li>
           <li><a href="#get-your-bagidor">Get Yours</a></li>
@@ -120,35 +122,73 @@
     </header>
 
     <main id="main">
+      <section class="section amazon-section" id="amazon" aria-labelledby="amazon-heading">
+        <div class="container amazon-shell">
+          <p class="eyebrow">Now shipping</p>
+          <h1 class="amazon-title" id="amazon-heading">Now Available on Amazon</h1>
+          <p class="amazon-copy">Initial batch is in stock and ready to ship.</p>
+          <a class="button button-primary" href="https://www.amazon.com/dp/B0GQLH9BKF" target="_blank" rel="noopener">Get Yours on Amazon</a>
+        </div>
+      </section>
+
       <section class="hero section" id="meet" aria-labelledby="hero-title">
         <div class="container hero-shell">
           <div class="hero-intro">
             <h1 class="hero-title" id="hero-title">MEET THE BAGIDOR HUMIDOR</h1>
             <p class="hero-copy">
-              A modern, portable cigar storage system designed to help keep cigars properly stored at home, at the lounge, or on the go. Durable, dependable, and ready when you are.
+              <strong class="hero-copy-highlight">Cigar Storage Perfected.</strong>
             </p>
           </div>
           <figure class="hero-media">
             <img src="images/bar.jpeg" alt="BAGIDOR cigar storage lifestyle image" width="1536" height="904" fetchpriority="high" decoding="async">
           </figure>
+          <p class="hero-product-line">The Complete Cigar Storage System for Home and Away</p>
+          <div class="meet-benefits-grid" aria-label="BAGIDOR storage benefits">
+            <article class="meet-benefit-card">
+              <h2>Effortless Cigar Storage</h2>
+              <p>Includes everything you need to enjoy properly humidified cigars—with zero setup, minimal effort, and no ongoing maintenance.</p>
+            </article>
+            <article class="meet-benefit-card">
+              <h2>Two-Way Humidity Control</h2>
+              <p>Automatically adds or absorbs moisture to maintain the perfect environment, protecting your cigars from drying out or excess moisture.</p>
+            </article>
+            <article class="meet-benefit-card">
+              <h2>Pure Flavor Protection</h2>
+              <p>The hygienic, non-reactive food-grade interior provides a clean, neutral environment that preserves your cigars’ true flavor, aroma, and character.</p>
+            </article>
+            <article class="meet-benefit-card">
+              <h2>Multi-Layer Humidity Shield</h2>
+              <p>High-barrier materials and a heavy-duty airtight zipper work together to create a high-retention, humidity-locked seal.</p>
+            </article>
+            <article class="meet-benefit-card">
+              <h2>Streamlined Storage</h2>
+              <p>A modern, lightweight alternative to bulky traditional humidors, plastic bins, and ordinary bags.</p>
+            </article>
+            <article class="meet-benefit-card">
+              <h2>Holds 40 Cigars</h2>
+              <p>Measures 13.75″ W × 12″ H with an expandable bottom to easily hold cigars of virtually any size or vitola.</p>
+            </article>
+          </div>
         </div>
       </section>
 
-      <section class="section" id="getting-started" aria-labelledby="getting-started-heading">
-        <div class="container getting-started-layout">
+      <section class="section boost-section" id="boost" aria-labelledby="boost-heading">
+        <div class="container">
           <div class="section-heading">
-            <h2 class="matched-section-heading" id="getting-started-heading">Getting Started</h2>
-            <p class="section-copy">Read the BAGIDOR user guide before using.</p>
-            <a class="button button-primary" href="images/bagidor-quick-start-guide.pdf" target="_blank" rel="noopener">Download User Guide</a>
+            <h2 class="matched-section-heading" id="boost-heading">Integra BOOST Humidity Pack</h2>
+            <p class="section-copy">Each BAGIDOR includes one 67 gram 2-Way 69% RH Humidity Pack.</p>
           </div>
-          <div class="video-frame" aria-label="BAGIDOR setup video">
-            <iframe
-              src="https://www.youtube.com/embed/BsYoQHV2OQ8"
-              title="BAGIDOR setup video"
-              loading="lazy"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen>
-            </iframe>
+
+          <div class="boost-showcase">
+            <div class="boost-product-row">
+              <div class="boost-image-frame boost-logo-frame">
+                <img class="boost-logo" src="images/integra-boost-logo.png" alt="Integra BOOST 2-Way Humidity Control" width="3777" height="2027" loading="lazy">
+              </div>
+              <div class="boost-image-frame boost-pack-frame">
+                <img class="boost-pack" src="images/boost-69rh-67gm-indicator.jpg" alt="Integra BOOST 69% RH 67 gram humidity pack with replacement indicator" width="1800" height="1200" loading="lazy">
+              </div>
+            </div>
+            <img class="boost-features" src="images/boost-features.png" alt="Integra BOOST construction featuring a tear-resistant shell, permeable membrane, salt-free plant-based formula, and breathable substrate" width="2632" height="1112" loading="lazy">
           </div>
         </div>
       </section>
@@ -188,22 +228,21 @@
         </div>
       </section>
 
-      <section class="section boost-section" id="boost" aria-labelledby="boost-heading">
-        <div class="container">
+      <section class="section" id="getting-started" aria-labelledby="getting-started-heading">
+        <div class="container getting-started-layout">
           <div class="section-heading">
-            <h2 class="matched-section-heading" id="boost-heading">BOOST 2-Way Humidity Pack Included</h2>
+            <h2 class="matched-section-heading" id="getting-started-heading">Getting Started</h2>
+            <p class="section-copy">Read the BAGIDOR user guide before using.</p>
+            <a class="button button-primary" href="images/bagidor-quick-start-guide.pdf" target="_blank" rel="noopener">Download User Guide</a>
           </div>
-
-          <div class="boost-showcase">
-            <div class="boost-product-row">
-              <div class="boost-image-frame boost-logo-frame">
-                <img class="boost-logo" src="images/integra-boost-logo.png" alt="Integra BOOST 2-Way Humidity Control" width="3777" height="2027" loading="lazy">
-              </div>
-              <div class="boost-image-frame boost-pack-frame">
-                <img class="boost-pack" src="images/boost-69rh-67gm-indicator.jpg" alt="Integra BOOST 69% RH 67 gram humidity pack with replacement indicator" width="1800" height="1200" loading="lazy">
-              </div>
-            </div>
-            <img class="boost-features" src="images/boost-features.png" alt="Integra BOOST construction featuring a tear-resistant shell, permeable membrane, salt-free plant-based formula, and breathable substrate" width="2632" height="1112" loading="lazy">
+          <div class="video-frame" aria-label="BAGIDOR setup video">
+            <iframe
+              src="https://www.youtube.com/embed/BsYoQHV2OQ8"
+              title="BAGIDOR setup video"
+              loading="lazy"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen>
+            </iframe>
           </div>
         </div>
       </section>
@@ -277,11 +316,10 @@
             <h2 class="matched-section-heading" id="get-your-bagidor-heading">Get Your BAGIDOR</h2>
           </div>
           <div class="availability-copy">
-            <p>Pick it up today:</p>
+            <p>Grab yours today at:</p>
             <a class="availability-image-link" href="https://westcoastcigars.net" target="_blank" rel="noopener" aria-label="Open West Coast Cigars in a new window">
               <img src="images/wcc.png" alt="West Coast Cigars" width="340" height="172" loading="lazy">
             </a>
-            <p>Grab yours in person.</p>
             <p>Prefer to shop online? Bagidor is coming very soon to Amazon. Stay tuned!</p>
           </div>
         </div>
@@ -290,7 +328,7 @@
       <section class="section muted-section" id="faqs" aria-labelledby="faqs-heading">
         <div class="container">
           <div class="section-heading narrow">
-            <h2 class="matched-section-heading" id="faqs-heading">Cigar Storage FAQs</h2>
+            <h2 class="matched-section-heading" id="faqs-heading">Frequently Asked Questions</h2>
           </div>
 
           <div class="faq-list">
