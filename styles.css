@@ -233,8 +233,8 @@ input {
 .hero-copy p {
   margin: 0;
   color: rgba(246, 242, 234, 0.82);
-  font-size: 14pt;
-  line-height: 1.7;
+  font-size: 18pt;
+  line-height: 1.55;
 }
 
 .hero-media {
@@ -254,8 +254,9 @@ input {
 }
 
 .hero-travel-copy {
-  width: min(100%, 860px);
+  width: min(calc(100% - 48px), 860px);
   margin: 0 auto;
+  justify-self: center;
   color: rgba(246, 242, 234, 0.82);
   font-size: 14pt;
   line-height: 1.7;
