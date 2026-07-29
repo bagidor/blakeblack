@@ -233,7 +233,7 @@ input {
 .hero-copy p {
   margin: 0;
   color: rgba(246, 242, 234, 0.82);
-  font-size: calc(0.9rem - 2pt);
+  font-size: 14pt;
   line-height: 1.7;
 }
 
@@ -251,6 +251,15 @@ input {
   width: 100%;
   aspect-ratio: 1536 / 904;
   object-fit: cover;
+}
+
+.hero-travel-copy {
+  width: min(100%, 860px);
+  margin: 0 auto;
+  color: rgba(246, 242, 234, 0.82);
+  font-size: 14pt;
+  line-height: 1.7;
+  text-align: center;
 }
 
 .hero-product-line {
