@@ -359,6 +359,23 @@ h3 {
   white-space: nowrap;
 }
 
+.amazon-section {
+  padding: clamp(54px, 7vw, 92px) 0 clamp(62px, 8vw, 108px);
+  border-bottom: 1px solid rgba(216, 201, 163, 0.1);
+}
+
+.amazon-shell {
+  max-width: 920px;
+  display: grid;
+  justify-items: center;
+  text-align: center;
+}
+
+.amazon-title {
+  max-width: 850px;
+  font-size: clamp(2.4rem, 6vw, 5.8rem);
+}
+
 .section-copy {
   max-width: 530px;
   margin: 22px 0 30px;

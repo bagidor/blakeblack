@@ -38,6 +38,23 @@
         font-size: 18pt;
         text-align: center;
       }
+
+      .amazon-section {
+        padding: clamp(54px, 7vw, 92px) 0 clamp(62px, 8vw, 108px);
+        border-bottom: 1px solid rgba(216, 201, 163, 0.1);
+      }
+
+      .amazon-shell {
+        max-width: 920px;
+        display: grid;
+        justify-items: center;
+        text-align: center;
+      }
+
+      .amazon-title {
+        max-width: 850px;
+        font-size: clamp(2.4rem, 6vw, 5.8rem);
+      }
     </style>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-RLLL920ESY"></script>
@@ -121,6 +138,7 @@
           <span class="sr-only">Toggle navigation</span>
         </button>
         <ul class="primary-nav" id="primary-nav" data-primary-nav>
+          <li><a href="#amazon">Amazon</a></li>
           <li><a href="#meet">Meet</a></li>
           <li><a href="#boost">BOOST</a></li>
           <li><a href="#reviews">Reviews</a></li>
@@ -136,6 +154,13 @@
     </header>
 
     <main id="main">
+      <section class="section amazon-section" id="amazon" aria-labelledby="amazon-heading">
+        <div class="container amazon-shell">
+          <p class="eyebrow">Shipping Soon</p>
+          <h2 class="amazon-title" id="amazon-heading">Available on Amazon August</h2>
+        </div>
+      </section>
+
       <section class="hero section" id="meet" aria-labelledby="hero-title">
         <div class="container hero-shell">
           <div class="hero-intro">
