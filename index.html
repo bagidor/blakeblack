@@ -45,15 +45,23 @@
       }
 
       .amazon-shell {
-        max-width: 920px;
+        max-width: 1280px;
         display: grid;
         justify-items: center;
         text-align: center;
       }
 
       .amazon-title {
-        max-width: 850px;
-        font-size: clamp(1.8rem, 3.75vw, 3.675rem);
+        width: 100%;
+        max-width: none;
+        font-size: clamp(1.8rem, 3vw, 3rem);
+        white-space: nowrap;
+      }
+
+      @media (max-width: 600px) {
+        .amazon-title {
+          white-space: normal;
+        }
       }
     </style>
     <!-- Google tag (gtag.js) -->
