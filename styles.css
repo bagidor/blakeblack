@@ -397,6 +397,10 @@ h3 {
   line-height: 1.42;
 }
 
+.amazon-title + .button {
+  margin-top: 30px;
+}
+
 .section-copy {
   max-width: 530px;
   margin: 22px 0 30px;
