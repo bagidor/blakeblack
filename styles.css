@@ -378,6 +378,10 @@ h3 {
   white-space: nowrap;
 }
 
+.amazon-title + .button {
+  margin-top: 30px;
+}
+
 @media (max-width: 600px) {
   .amazon-title {
     white-space: normal;
