@@ -735,6 +735,18 @@ h3 {
   border-bottom-color: var(--burnished-copper);
 }
 
+.availability-copy .button-primary {
+  justify-self: start;
+  color: #17130f;
+  border: 1px solid var(--burnished-copper);
+}
+
+.availability-copy .button-primary:hover,
+.availability-copy .button-primary:focus-visible {
+  color: #17130f;
+  border-color: var(--champagne-gold);
+}
+
 .faq-list {
   display: grid;
   gap: 12px;
