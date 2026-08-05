@@ -723,6 +723,8 @@ h3 {
 }
 
 .availability-copy .button-primary {
+  width: fit-content;
+  max-width: 100%;
   justify-self: start;
   color: #17130f;
   border: 1px solid var(--burnished-copper);
