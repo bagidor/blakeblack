@@ -543,11 +543,30 @@ h3 {
   padding-top: clamp(54px, 8vw, 104px);
 }
 
+.review-feature {
+  margin: 0 auto clamp(28px, 4vw, 44px);
+}
+
 .reviews-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 18px;
   align-items: start;
+}
+
+.hero-product-image {
+  width: min(100%, 920px);
+  margin: 0 auto;
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid rgba(216, 201, 163, 0.22);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.hero-product-image img {
+  width: 100%;
+  height: auto;
 }
 
 .review-card {
