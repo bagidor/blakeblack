@@ -885,6 +885,44 @@ h3 {
   color: var(--muted-text);
 }
 
+.specifications-section {
+  border-bottom: 1px solid rgba(216, 201, 163, 0.1);
+}
+
+.specifications-list {
+  max-width: 920px;
+  margin: 0;
+  overflow: hidden;
+  background: rgba(45, 41, 37, 0.45);
+  border: 1px solid rgba(216, 201, 163, 0.16);
+  border-radius: var(--radius);
+}
+
+.specification-row {
+  display: grid;
+  grid-template-columns: minmax(150px, 0.32fr) minmax(0, 0.68fr);
+  gap: clamp(20px, 4vw, 48px);
+  padding: 20px clamp(20px, 3vw, 30px);
+}
+
+.specification-row + .specification-row {
+  border-top: 1px solid rgba(216, 201, 163, 0.12);
+}
+
+.specification-row dt {
+  color: var(--champagne-gold);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.specification-row dd {
+  margin: 0;
+  color: rgba(246, 242, 234, 0.88);
+  line-height: 1.55;
+}
+
 .contact-grid {
   display: block;
 }
@@ -1153,6 +1191,11 @@ h3 {
   .hero-title {
     font-size: clamp(1.65rem, 8vw, 2.1rem);
     white-space: normal;
+  }
+
+  .specification-row {
+    grid-template-columns: 1fr;
+    gap: 7px;
   }
 
   .uses-grid,
