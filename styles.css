@@ -558,8 +558,6 @@ h3 {
   width: min(100%, 920px);
   margin: clamp(28px, 4vw, 46px) auto 0;
   overflow: hidden;
-  background: #fff;
-  border: 1px solid rgba(216, 201, 163, 0.22);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
 }
