@@ -23,7 +23,51 @@
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <link rel="preload" href="images/bar.jpeg" as="image">
-    <link rel="stylesheet" href="styles.css?v=20260729-travel-copy-preview">
+    <link rel="stylesheet" href="styles.css?v=20260815-stogiephile-preview">
+    <style>
+      .hero-copy p {
+        font-size: 18pt;
+        line-height: 1.55;
+      }
+
+      .hero-travel-copy {
+        width: min(calc(100% - 48px), 860px);
+        margin-right: auto;
+        margin-left: auto;
+        justify-self: center;
+        font-size: 18pt;
+        text-align: center;
+      }
+
+      .amazon-section {
+        padding: clamp(54px, 7vw, 92px) 0 clamp(62px, 8vw, 108px);
+        border-bottom: 1px solid rgba(216, 201, 163, 0.1);
+      }
+
+      .amazon-shell {
+        max-width: 1280px;
+        display: grid;
+        justify-items: center;
+        text-align: center;
+      }
+
+      .amazon-title {
+        width: 100%;
+        max-width: none;
+        font-size: clamp(1.8rem, 3vw, 3rem);
+        white-space: nowrap;
+      }
+
+      .amazon-title + .button {
+        margin-top: 30px;
+      }
+
+      @media (max-width: 600px) {
+        .amazon-title {
+          white-space: normal;
+        }
+      }
+    </style>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-RLLL920ESY"></script>
     <script>
@@ -124,9 +168,20 @@
     <main id="main">
       <section class="section amazon-section" id="amazon" aria-labelledby="amazon-heading">
         <div class="container amazon-shell">
-          <p class="eyebrow">Now shipping</p>
-          <h1 class="amazon-title" id="amazon-heading">Now Available on Amazon</h1>
+          <p class="eyebrow">Shipping Now</p>
+          <h2 class="amazon-title" id="amazon-heading">Available Now on Amazon!</h2>
           <a class="button button-primary" href="https://www.amazon.com/dp/B0GQLH9BKF?maas=maas_adg_CD249435C76C7A23011C7A3F25369395_afap_abs&amp;ref_=aa_maas&amp;tag=maas" target="_blank" rel="noopener">Get Yours on Amazon</a>
+          <a class="article-preview" href="https://stogiephile.blog/2026/08/15/introducing-the-bagidor/" target="_blank" rel="noopener" aria-label="Read Introducing the Bagidor on Unco B's Stogie Diary">
+            <span class="article-preview-media">
+              <img src="images/stogiephile-bagidor-preview.jpg" alt="BAGIDOR featured by Unco B's Stogie Diary" width="1200" height="903" loading="lazy">
+            </span>
+            <span class="article-preview-body">
+              <span class="article-preview-kicker">Featured on Unco B's Stogie Diary</span>
+              <span class="article-preview-title">Introducing the Bagidor!</span>
+              <span class="article-preview-copy">A closer look at BAGIDOR's simple design, 40-cigar capacity, locking zipper, and effortless humidity control.</span>
+              <span class="article-preview-link">Read the article <span aria-hidden="true">&rarr;</span></span>
+            </span>
+          </a>
         </div>
       </section>
 
@@ -142,7 +197,7 @@
           <figure class="hero-media">
             <img src="images/bar.jpeg" alt="BAGIDOR cigar storage lifestyle image" width="1536" height="904" fetchpriority="high" decoding="async">
           </figure>
-          <p class="hero-travel-copy">Lightweight and space-efficient, BAGIDOR fits easily on a shelf or inside a cabinet or drawer. Slip it into a travel bag or take it along in your car, golf cart, RV, boat, or wherever the day takes you. It provides reliable cigar protection on the move without unnecessary bulk.</p>
+          <p class="hero-travel-copy">Lightweight and space-efficient, BAGIDOR fits easily on a shelf or in a cabinet. Slip it into a travel bag or take it along in your car, golf cart, RV, boat, or wherever the day takes you. It provides reliable cigar protection on the move without unnecessary bulk.</p>
           <p class="hero-product-line">The Complete Cigar Storage System for Home and Away</p>
           <div class="meet-benefits-grid" aria-label="BAGIDOR storage benefits">
             <article class="meet-benefit-card">
@@ -263,7 +318,7 @@
       <section class="section muted-section" id="uses" aria-labelledby="uses-heading">
         <div class="container">
           <div class="section-heading narrow">
-            <h2 class="matched-section-heading" id="uses-heading">One BAGIDOR. Many Uses.</h2>
+            <h2 class="matched-section-heading" id="uses-heading">One BAGIDOR — Many Uses</h2>
           </div>
 
           <div class="uses-grid">
